@@ -22,7 +22,7 @@ return {
 				"html",
 				"cssls",
 				"lua_ls",
-				-- "clangd",
+				"clangd",
 			},
 			automatic_installation = true,
 		})

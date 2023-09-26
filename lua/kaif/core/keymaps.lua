@@ -26,11 +26,11 @@ keymap("n", "<C-wq>", ":wq<CR>") --write and quit file
 keymap("n", "<leader>q", ":q!<CR>") --quit file
 
 --telescope
-keymap("n", "<leader>ff", ":Telescope find_files<CR>")
-keymap("n", "<leader>fs", "<cmd>Telescope live_grep<CR>")
-keymap("n", "<leader>fc", "<cmd>Telescope grep_string<CR>")
-keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR>")
-keymap("n", "<leader>fh", "<cmd>Telescope help_tags<CR>")
+-- keymap("n", "<leader>ff", ":Telescope find_files<CR>")
+-- keymap("n", "<leader>fs", "<cmd>Telescope live_grep<CR>")
+-- keymap("n", "<leader>fc", "<cmd>Telescope grep_string<CR>")
+-- keymap("n", "<leader>fb", "<cmd>Telescope buffers<CR>")
+-- keymap("n", "<leader>fh", "<cmd>Telescope help_tags<CR>")
 
 --Format after save(formatter)
 -- keymap("n", "<leader>F", ":FormatWrite<CR>")

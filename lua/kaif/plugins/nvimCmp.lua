@@ -15,6 +15,7 @@ return {
 	config = function()
 		local cmp = require("cmp")
 		local lspkind = require("lspkind")
+		-- hello
 		require("luasnip.loaders.from_vscode").lazy_load()
 		cmp.setup({
 			snippet = {
@@ -41,8 +42,8 @@ return {
 			--              -- ["<CR>"] = cmp.mapping({}),
 			-- }),
 			mapping = {
-				["<C-k>"] = cmp.mapping(cmp.mapping.select_prev_item(), {"i"}, "c"),
-				["<C-j>"] = cmp.mapping(cmp.mapping.select_next_item(), {"i"}, "c"),
+				["<C-k>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i" }, "c"),
+				["<C-j>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i" }, "c"),
 				["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }),
 				["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
 				["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
@@ -51,17 +52,17 @@ return {
 					i = cmp.mapping.abort(),
 					c = cmp.mapping.close(),
 				}),
-                ["<CR>"] = cmp.mapping({
-                    i = function (fallback)
-                        if cmp.visible() and cmp.get_active_entry() then
-                            cmp.confirm({behavior = cmp.ConfirmBehavior.Replace, select =false})
-                        else
-                            fallback()
-                        end
-                    end,
-                    s = cmp.mapping.confirm({select = true}),
-                    c = cmp.mapping.confirm({behavior = cmp.ConfirmBehavior.Replace, select = true}),
-                }),
+				["<CR>"] = cmp.mapping({
+					i = function(fallback)
+						if cmp.visible() and cmp.get_active_entry() then
+							cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
+						else
+							fallback()
+						end
+					end,
+					s = cmp.mapping.confirm({ select = true }),
+					c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
+				}),
 				-- ["<CR>"] = cmp.mapping.confirm({ select = true }),
 			},
 			sources = cmp.config.sources({

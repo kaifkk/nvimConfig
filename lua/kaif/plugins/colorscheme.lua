@@ -1,3 +1,4 @@
+-- tokyonight ColorScheme
 return {
 	"folke/tokyonight.nvim",
 	lazy = false,
