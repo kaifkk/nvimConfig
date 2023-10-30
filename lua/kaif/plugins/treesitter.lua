@@ -4,6 +4,7 @@ return {
 		"windwp/nvim-ts-autotag",
 	},
 	build = ":TSUpdate",
+	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local configs = require("nvim-treesitter.configs")
 		configs.setup({
@@ -18,6 +19,16 @@ return {
 				"css",
 				"javascript",
 				"cpp",
+				"python",
+			},
+			incremental_selection = {
+				enable = true,
+				keymaps = {
+					init_selection = "<C-space>",
+					node_incremental = "<C-space>",
+					scope_incremental = false,
+					node_decremental = "<bs>",
+				},
 			},
 			sync_install = false, -- Install parsers synchronously (only applied to `ensure_installed`)
 			auto_install = true, -- Automatically install missing parsers when entering buffer

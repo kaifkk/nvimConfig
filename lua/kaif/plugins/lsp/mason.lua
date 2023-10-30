@@ -23,6 +23,7 @@ return {
 				"cssls",
 				"lua_ls",
 				"clangd",
+				"pyright",
 			},
 			automatic_installation = true,
 		})

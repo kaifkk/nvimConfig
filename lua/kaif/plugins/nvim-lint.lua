@@ -8,6 +8,7 @@ return {
 			html = { "tidy" },
 			css = { "stylelint" },
 			javascript = { "eslint" },
+			py = { "pylint" },
 		}
 		vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 			callback = function()

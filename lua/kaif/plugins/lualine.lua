@@ -7,6 +7,11 @@ return {
 
 		-- configure lualine with modified theme
 		lualine.setup({
+			-- options = {
+			-- 	-- ... your lualine config
+			-- 	theme = "nord",
+			-- 	-- ... your lualine config
+			-- },
 			sections = {
 				lualine_x = {
 					{

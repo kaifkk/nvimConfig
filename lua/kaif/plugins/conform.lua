@@ -9,9 +9,10 @@ return {
 				-- Conform will run multiple formatters sequentially
 				-- python = { "isort", "black" },
 				-- Use a sub-list to run only the first available formatter
-				javascript = { { "prettierd", "prettier" } },
+				-- javascript = { { "prettierd", "prettier" } },
 				css = { "prettier" },
 				html = { "prettier" },
+				python = { "isort", "black" },
 			},
 			format_on_save = {
 				-- I recommend these options. See :help conform.format for details.
